@@ -13,7 +13,7 @@ client_scripts {
     "source/client.lua"
 }
 server_script "source/server.lua"
-
+shared_script "@ND_Core/init.lua"
 exports {
     "doorAdd",
     "nearbyDoorLock",

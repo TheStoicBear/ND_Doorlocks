@@ -1,6 +1,4 @@
 -- For support join my discord: https://discord.gg/Z9Mxu72zZ6
-
-local NDCore = exports["ND_Core"]:GetCoreObject()
 local updatedDoors = {}
 local job
 local hasAccess = false
@@ -9,7 +7,7 @@ local pedCoords
 local doorNear
 local syncedDoors = {}
 
-local character = NDCore.Functions.GetSelectedCharacter()
+local character = NDCore.getPlayer()
 if character then job = character.job end
 
 function drawText3D(coords, text)
